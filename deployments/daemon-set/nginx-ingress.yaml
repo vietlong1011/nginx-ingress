@@ -17,6 +17,15 @@ spec:
        #prometheus.io/port: "9113"
        #prometheus.io/scheme: http
     spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: test
+                operator: In
+                values:
+                - test      
       serviceAccountName: nginx-ingress
       automountServiceAccountToken: true
       securityContext:
