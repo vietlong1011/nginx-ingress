@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.5
 # this is here so we can grab the latest version of kind and have dependabot keep it up to date
-FROM kindest/node:v1.29.0@sha256:eaa1450915475849a73a9227b8f201df25e55e268e5d619312131292e324d570
+FROM kindest/node:v1.30.0@sha256:047357ac0cfea04663786a612ba1eaba9702bef25227a794b52890dd8bcd692e
 
 FROM python:3.12@sha256:3733015cdd1bd7d9a0b9fe21a925b608de82131aa4f3d397e465a1fcb545d36f
 
